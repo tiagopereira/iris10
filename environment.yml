@@ -1,0 +1,15 @@
+name: iris
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.6
+  - numpy
+  - scipy=0.9.8
+  - astropy
+  - matplotlib
+  - ipympl
+  - ipython
+  - sunpy
+  - ndcube
+  - pbzip2
+  - pip

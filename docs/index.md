@@ -2,7 +2,7 @@
 
 This page provides more information about the IRIS Python tutorial given at the IRIS-10 meeting in Bengaluru, India. At the workshop, participants are expected to work on the tutorial using Binder, a cloud-based solution that lets you run an instance of Jupyter lab with all the required packages and data files. To start the Binder notebook, follow the link below:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tiagopereira/iris_tutorials/master?urlpath=lab/tree/notebooks%2FIRIS10.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tiagopereira/iris10/master?urlpath=lab/tree/notebooks%2FIRIS10.ipynb)
 
 # Running on your computer
 
@@ -11,10 +11,10 @@ Binder makes it easy to get started with minimal effort, but if you want to actu
 To install the tutorial files, you need to clone its [git repository](https://github.com/tiagopereira/iris_tutorials/) or [download a zip file](https://github.com/tiagopereira/iris_tutorials/archive/master.zip). To clone, run the following in a directory of your choice:
 
 ```bash
-git clone https://github.com/tiagopereira/iris_tutorials.git
+git clone https://github.com/tiagopereira/iris10.git
 ```
 
-You will end up with a directory called `iris_tutorials`. In the terminal, go to that directory. If you do not have IRISPy installed, you can create a new conda environment by using the supplied `environment.yml` file. The following will download and install all required packages into an environment called `iris`:
+You will end up with a directory called `iris10`. In the terminal, go to that directory. If you do not have IRISPy installed, you can create a new conda environment by using the supplied `environment.yml` file. The following will download and install all required packages into an environment called `iris`:
 
 ```bash
 conda env create -f environment.yml
@@ -29,7 +29,7 @@ conda activate iris
 Lastly, you will need to install IRISPy (not available on conda) with pip:
 
 ```bash
-pip install git+https://github.com/sunpy/irispy.git
+pip install git+https://github.com/tiagopereira/irispy.git
 ```
 
 Optionally, if you want to have interactive matplotlib plots in jupyter, you need to run (this operation takes a while):

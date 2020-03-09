@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Build jupyterlab extensions
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+
+# Install IRISpy
+pip install git+https://github.com/tiagopereira/irispy.git
+
+# Download data files
+wget -c http://www.lmsal.com/solarsoft/irisa/data/level2_compressed/2018/01/02/20180102_153155_3610108077/iris_l2_20180102_153155_3610108077_SJI_1400_t000.fits.gz -P notebooks/
+wget -c http://www.lmsal.com/solarsoft/irisa/data/level2/2014/09/19/20140919_051712_3860608353/iris_l2_20140919_051712_3860608353_SJI_2832_t000.fits -P notebooks/
+wget -c https://folk.uio.no/tiago/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2 -P notebooks
+pbunzip2 notebooks/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2
+wget -c https://folk.uio.no/tiago/aia_20140919_060030_1700_image_lev1.fits -P notebooks/
