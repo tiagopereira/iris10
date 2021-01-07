@@ -10,6 +10,10 @@ dependencies:
   - ipympl
   - ipython
   - sunpy
-  - ndcube
+  - ndcube=1.4.2
+  - sunraster=0.1.2
+  - gdown
   - pbzip2
   - pip
+  - pip:
+    - git+https://gitlab.com/LMSAL_HUB/iris_hub/irispy-lmsal.git@3a0f2af37403cb6a25e7cb2780b1377c207817b4
