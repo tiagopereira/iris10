@@ -5,7 +5,8 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplot
 
 # Download data files
 wget -c http://www.lmsal.com/solarsoft/irisa/data/level2_compressed/2018/01/02/20180102_153155_3610108077/iris_l2_20180102_153155_3610108077_SJI_1400_t000.fits.gz -P notebooks/
-wget -c http://www.lmsal.com/solarsoft/irisa/data/level2/2014/09/19/20140919_051712_3860608353/iris_l2_20140919_051712_3860608353_SJI_2832_t000.fits -P notebooks/
+wget -c http://www.lmsal.com/solarsoft/irisa/data/level2_compressed/2014/09/19/20140919_051712_3860608353/iris_l2_20140919_051712_3860608353_SJI_2832_t000.fits.gz -P notebooks/
+gunzip notebooks/iris_l2_20140919_051712_3860608353_SJI_2832_t000.fits.gz
 gdown https://drive.google.com/uc?id=1LQ0fQfr-YU2FXVjvLLAi226iZiI4EoCW -O notebooks/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2
 pbunzip2 notebooks/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2
 wget "https://drive.google.com/uc?export=download&id=1SgascyixFq7v5LzG2hcxHWJKfe0SssN5" -O notebooks/aia_20140919_060030_1700_image_lev1.fits
